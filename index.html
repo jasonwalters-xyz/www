@@ -56,7 +56,7 @@
             color: #c8c8c8;
             line-height: 1.85;
             margin: 0;
-            max-width: 560px;
+            max-width: none;
         }
 
         .hero-btn {
@@ -140,6 +140,7 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-auto-rows: 420px;
+            grid-auto-flow: dense;
             gap: 2px;
         }
 
@@ -181,7 +182,7 @@
                 bottom: 32px;
             }
             .tile-grid { grid-template-columns: 1fr; }
-            .tile--wide { grid-column: span 1; aspect-ratio: 16/9; }
+            .tile--wide { grid-column: span 1; }
         }
     </style>
 </head>
@@ -206,7 +207,8 @@
         </video> -->
         <div class="hero-overlay"></div>
         <div class="hero-caption">
-            <p class="hero-desc">Jason Walters is an interactive artist and software engineer.<br>For more information or booking requests, please <a href="https://www.linkedin.com/in/jasonwalters-xyz/" target="_blank" rel="noopener noreferrer">contact</a>.</p>
+            <p class="hero-desc">Jason Walters is an interactive artist, game developer, and software engineer. His personal work focuses on minimal, abstract compositions that explore depth, movement, and the human form.
+<br>For more information or booking requests, please <a href="https://www.linkedin.com/in/jasonwalters-xyz/" target="_blank" rel="noopener noreferrer">contact</a>.</p>
         </div>
     </section>
 
@@ -218,11 +220,11 @@
         </div> -->
         <div class="tile-grid">
             <a class="tile" href="studio/eyka/">
-                <video muted loop playsinline preload="auto" autoplay><source src="studio/eyka/content/Eyka_006.mp4" type="video/mp4"></video>
+                <video muted loop playsinline preload="auto" autoplay poster="studio/eyka/content/Eyka_02.png"><source src="studio/eyka/content/Eyka_006.mp4" type="video/mp4"></video>
                 <div class="work-list-caption"><span class="work-list-title">Eyka</span></div>
             </a>
             <a class="tile tile--wide" href="studio/waveforms/">
-                <video muted loop playsinline preload="auto" autoplay><source src="studio/waveforms/content/waveforms_00.mp4" type="video/mp4"></video>
+                <video muted loop playsinline preload="auto" autoplay poster="studio/waveforms/content/waveforms_02.png"><source src="studio/waveforms/content/waveforms_00.mp4" type="video/mp4"></video>
                 <div class="work-list-caption"><span class="work-list-title">Waveforms</span></div>
             </a>
             <a class="tile tile--wide" href="studio/mthr/">
@@ -246,23 +248,23 @@
                 <div class="work-list-caption"><span class="work-list-title">Fuelband Launch</span></div>
             </a>
             <a class="tile" href="studio/31e131e/">
-                <video muted loop playsinline preload="auto" autoplay><source src="studio/31e131e/content/31e_00.mp4" type="video/mp4"></video>
+                <video muted loop playsinline preload="auto" autoplay poster="studio/31e131e/content/31e_01.png"><source src="studio/31e131e/content/31e_00.mp4" type="video/mp4"></video>
                 <div class="work-list-caption"><span class="work-list-title">31e131e</span></div>
             </a>
             <a class="tile" href="studio/dinocat/">
-                <video muted loop playsinline preload="auto" autoplay><source src="studio/dinocat/content/dinocat.mp4" type="video/mp4"></video>
+                <video muted loop playsinline preload="auto" autoplay poster="studio/dinocat/content/dinocat_01.png"><source src="studio/dinocat/content/dinocat.mp4" type="video/mp4"></video>
                 <div class="work-list-caption"><span class="work-list-title">Dinocat</span></div>
             </a>
             <a class="tile tile--wide" href="studio/glass_runner/">
-                <video muted loop playsinline preload="auto" autoplay><source src="studio/glass_runner/content/glass_runner_01.mp4" type="video/mp4"></video>
+                <video muted loop playsinline preload="auto" autoplay poster="studio/glass_runner/content/glass_runner_02.png"><source src="studio/glass_runner/content/glass_runner_01.mp4" type="video/mp4"></video>
                 <div class="work-list-caption"><span class="work-list-title">Glass Runner</span></div>
             </a>
             <a class="tile tile--wide" href="studio/bruto/">
-                <img src="studio/bruto/content/bruto_header.png" alt="Bruto">
+                <img src="studio/bruto/content/bruto_01.png" alt="Bruto">
                 <div class="work-list-caption"><span class="work-list-title">Bruto</span></div>
             </a>
             <a class="tile" href="studio/stargrid/">
-                <video muted loop playsinline preload="auto" autoplay><source src="studio/stargrid/content/stargrid_01.mp4" type="video/mp4"></video>
+                <video muted loop playsinline preload="auto" autoplay poster="studio/stargrid/content/stargrid_01.png"><source src="studio/stargrid/content/stargrid_01.mp4" type="video/mp4"></video>
                 <div class="work-list-caption"><span class="work-list-title">Stargrid</span></div>
             </a>
         </div>
